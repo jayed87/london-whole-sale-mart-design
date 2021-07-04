@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>LondonWholeSaleMart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+
+    
+    <section class="Header_section sticky-top"><!-- top header start -->
+    	<section id="top_header" >
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    				<div class="col-6">
+	    					<h5>SaleMart</h5>
+	    				</div>
+	    				
+	    				<div class="col-6 text-right">
+	    					<div class="d-flex flex-row-reverse">
+							  <div class="p-2"><a href="#"><i class="bi-search"></i> Search</a></div>
+							  <div class="p-2"><a href="#"><i class="bi-person-lines-fill"></i> Register</a></div>
+							  <div class="p-2"><a href="#"><i class="bi-file-lock"></i> Login</a></div>
+							</div>
+	    				</div>
+	    		</div>
+	    	</div>
+    	</section><!-- top header end -->
+
+		<div class="d-flex flex-row-reverse"><!-- Header adding start-->
+			<div class="p-2"><a href="#" onclick="openCatForm()"><i class="bi bi-pencil" style="color:cadetblue"></i></a></div>
+		  </div>
+			<div class="form-popup" id="myForm1">
+			<form action="/action_page.php" class="form-container">
+				<h3>Add Category</h3>
+
+				<label for="cate"><b>Name</b></label>
+				<input type="text" placeholder="Category name" name="cat-name" required>
+
+				<label for="cat"><b>Id</b></label>
+				<input type="text" placeholder="Enter Id" name="cat-id" required>
+
+				<button type="submit" class="btn">Add</button>
+				<button type="button" class="btn cancel" onclick="closeCatForm()">Close</button>
+			</form>
+			</div><!-- Header adding end-->
+
+		  <section id="top_manu"><!-- Navbar Start -->
+	    	<div class="container-fluid">
+				<div class="row">
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					      <span class="navbar-toggler-icon"></span>
+					    </button>
+					    <div class="collapse navbar-collapse" id="navbarNav">
+					      <ul class="navbar-nav mx-auto">
+					        <li class="nav-item text-center">
+					          <a class="nav-link" href="index.html">HOME</a>
+					        </li>
+					        <li class="nav-item text-center">
+					          <a class="nav-link" href="new_in.html">NEW IN</a>
+					        </li>
+					        <li class="nav-item text-center">
+					          <a class="nav-link" href="mens.html">MENS</a>
+					        </li>
+					        <li class="nav-item text-center">
+					          <a class="nav-link" href="womens.html">WOMENS</a>
+					        </li>
+					        <li class="nav-item text-center">
+					          <a class="nav-link" href="kids.html">KIDS</a>
+					        </li>
+					      </ul>
+					    </div>
+					</nav>
+				</div>
+			</div>
+	    </section>
+	</section><!-- Navbar End -->
+
+    <section id="carousel_section"> <!-- carousel start -->
+    	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-bs-interval="1500" data-bs-pause="false">
+		      <img src="imgs/slider1-1.jpg" class="d-block w-100" alt="img">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h1>MEN'S DENIM JACKET</h1>
+		      </div>
+		    </div>
+		    <div class="carousel-item" data-bs-interval="1500" data-bs-pause="false">
+		      <img src="imgs/slider2-2.jpg" class="d-block w-100" alt="img">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h1>BOY'S DENIM SHIRT</h1>
+		      </div>
+		    </div>
+		    <div class="carousel-item" data-bs-interval="1500" data-bs-pause="false">
+		      <img src="imgs/slider4-3.jpg" class="d-block w-100" alt="img">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h1>KID'S DENIM LONG PANT</h1>
+		      </div>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+    </section><!-- carousel end -->
+
+	<div class="d-flex flex-row-reverse"><!-- Product adding start-->
+		<div class="p-2"><a href="#" onclick="openProductsForm()"><i class="bi bi-pencil" style="color:cadetblue"></i></a></div>
+	  </div>
+	  <div class="form-popup-products" id="myForm2">
+		<form action="/action_page.php" class="form-container-products">
+			<h3>Add Produtcs</h3>
+			<input type="text" placeholder="Products name" name="prod-name" required>
+			<input type="text" placeholder="Products Id" name="prod-id" required>
+			<input type="text" placeholder="Products Description" name="prod-des" required>
+			<input type="text" placeholder="Products Brand" name="prod-brand" required>
+			<input type="text" placeholder="Available Colors" name="prod-color" required>
+			<label for="Size">Sizes:</label>
+			<input type="number" id="quantity" name="quantity" min="1" max="5">
+			<label for="myfile">Select an Image:</label>
+  			<input type="file" id="myfile" name="myfile">
+			<button type="submit" class="btn btn-primary form-control">Add Products</button>
+			<button type="button" class="btn btn-danger cancel form-control" onclick="closeProductsForm()">Close</button>
+		</form>
+		</div><!-- Product adding end-->
+
+    <section class="hot_product text-center"><!-- hot products start -->
+    	<div class="container-fluid">
+    		<div class="row">
+    			<h3> HOT PRODUCTS</h3>
+    			<div class="hot_product_img">
+    				<div class="row">
+    					<div class="col-md-4">
+    						<a href="#"><img src="imgs/s2.jpg"></a>
+		    			</div>
+			    		<div class="col-md-4">
+			    			<a href="#"><img src="imgs/s3.jpg"></a>
+			    		</div>
+			    		<div class="col-md-4">
+			    			<a href="#"><img src="imgs/s4.jpg"></a>
+			    		</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section><!-- hot products end -->
+
+    <section class="featured_product text-center"><!-- featured products start -->
+    	<div class="container-fluid">
+    		<div class="row">
+    			<h3> FEATURED PRODUCTS</h3>
+    			<div class="featured_product_img">
+    				<div class="row">
+    					<div class="col-md-4">
+    						<a href="#"><img src="imgs/s2.jpg"></a>
+		    			</div>
+			    		<div class="col-md-4">
+			    			<a href="#"><img src="imgs/s3.jpg"></a>
+			    		</div>
+			    		<div class="col-md-4">
+			    			<a href="#"><img src="imgs/s4.jpg"></a>
+			    		</div>
+    				</div>
+	    			</div>
+	    		</div>
+    		</div>
+    	</div>
+    </section><!-- featured products end -->
+
+    <section class="new_product text-center"><!-- new products start -->
+    	<div class="container-fluid">
+    		<div class="row">
+    			<h3 class="text-center"> NEW & UPDATED PRODUCTS</h3>
+    			<div class="new_product_img">
+    				<div class="row">
+    					<div class="col-md-3">
+    						<div class="new_product_img_box">
+    							<a href="#"><img src="imgs/s3.jpg" width="220" height="290" class="img-responsive"></a>
+    						</div>
+		    			</div>
+			    		<div class="col-md-3">
+    						<div class="new_product_img_box">
+    							<a href="#"><img src="imgs/s3.jpg" width="220" height="290" class="img-responsive"></a>
+    						</div>
+		    			</div>
+			    		<div class="col-md-3">
+    						<div class="new_product_img_box">
+    							<a href="#"><img src="imgs/s3.jpg" width="220" height="290" class="img-responsive"></a>
+    						</div>
+		    			</div>
+			    		<div class="col-md-3">
+    						<div class="new_product_img_box">
+    							<a href="#"><img src="imgs/s3.jpg" width="220" height="290" class="img-responsive"></a>
+    						</div>
+		    			</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section><!-- new products end -->
+
+	<section id="footer_nav">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="d-flex justify-content-center footer_nav_contents">
+					 <div class="p-2"><a href="#">Home</a></div>
+					 <div class="p-2"><a href="#">About Us</a></div>
+					 <div class="p-2"><a href="#">Terms & Condition</a></div>
+					 <div class="p-2"><a href="#">Delivery Terms</a></div>
+					 <div class="p-2"><a href="#">Privacy Policy</a></div>
+					 <div class="p-2"><a href="#">Contact Us</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="footer_section text-center"><!-- footer section Start -->
+		<div class="container-fluid">
+			<div class="row">
+				<p>
+					© Copyright 2021. All Rights Reserved by M Ferdous Akbar.
+				</p>
+			</div>
+		</div>
+	</section><!-- footer section Start -->
+
+
+
+
+    <!-- Boostrap and popper js start-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!-- Boostrap and popper js start-->
+	<script>
+		function openCatForm() {
+		  document.getElementById("myForm1").style.display = "block";
+		}
+		function closeCatForm() {
+		  document.getElementById("myForm1").style.display = "none";
+		}
+
+		function openProductsForm() {
+		  document.getElementById("myForm2").style.display = "block";
+		}
+		function closeProductsForm() {
+		  document.getElementById("myForm2").style.display = "none";
+		}
+		</script>
+  </body>
+</html>
